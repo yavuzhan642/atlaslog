@@ -1,12 +1,12 @@
 import Link from "next/link";
 import {
-  Globe2,
   Menu,
   Plus,
   UserRound,
 } from "lucide-react";
 
 import { SignOutButton } from "@/components/auth/sign-out-button";
+import { AtlaslogLogo } from "@/components/atlaslog-logo";
 import { TravelMap } from "@/components/map/travel-map";
 import { PrimaryNav } from "@/components/primary-nav";
 
@@ -31,12 +31,10 @@ export function AppShell() {
               </button>
 
               <div className="flex items-center gap-3 rounded-2xl border border-white/[0.08] bg-black/45 px-3 py-2 backdrop-blur-xl">
-                <div className="flex h-8 w-8 items-center justify-center rounded-xl border border-white/[0.1] bg-white/[0.08]">
-                  <Globe2
-                    size={17}
-                    strokeWidth={1.7}
-                  />
-                </div>
+                <AtlaslogLogo
+                  size="sm"
+                  priority
+                />
 
                 <div>
                   <p className="text-[15px] font-semibold tracking-[-0.02em]">
@@ -51,7 +49,6 @@ export function AppShell() {
             </div>
 
             <div className="pointer-events-auto flex items-center gap-2">
-
               <Link
                 href="/settings"
                 aria-label="profile settings"

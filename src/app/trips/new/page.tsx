@@ -339,7 +339,7 @@ export default async function NewTripPage() {
 
   return (
     <main className="min-h-screen bg-[#090b0e] text-white">
-      <div className="mx-auto flex min-h-screen w-full max-w-xl flex-col px-5 py-6 sm:px-8 sm:py-8">
+      <div className="mx-auto min-h-screen w-full max-w-7xl px-5 py-6 sm:px-8 sm:py-8">
         <header className="flex items-center justify-between">
           <Link
             href="/"
@@ -349,7 +349,10 @@ export default async function NewTripPage() {
               size={16}
               strokeWidth={1.8}
             />
-            <span>map</span>
+
+            <span>
+              map
+            </span>
           </Link>
 
           <span className="text-sm font-semibold tracking-[-0.02em] text-white/90">
@@ -357,7 +360,7 @@ export default async function NewTripPage() {
           </span>
         </header>
 
-        <section className="mt-20 sm:mt-24">
+        <section className="mt-12 sm:mt-14">
           <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/[0.09] bg-white/[0.055] text-white/65">
             <MapPinned
               size={20}
@@ -370,7 +373,7 @@ export default async function NewTripPage() {
               add trip
             </h1>
 
-            <p className="mt-2 max-w-md text-sm leading-6 text-white/40">
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-white/40">
               add places in the order you visited them and choose how the trip should appear on your map.
             </p>
           </div>
